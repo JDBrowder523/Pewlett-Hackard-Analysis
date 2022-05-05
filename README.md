@@ -30,11 +30,15 @@
  1. There are a total of 72458 employees who are of retirement age.  Pewlett Hackard will need to start filling these roles as soon as possible in order to maintain enough employees to carry the current workload.  The total number of retirement age employees was determined using the PostgreSQL query below:
 
  --Get the total nummber of mentor candidates
+
  SELECT COUNT (me.emp_no)
+
  FROM mentorship_eligibility AS me;
 
  2. There are not enough mentorship eligible candidates to mentor all the new hires that Pewlett Hackard will have to hire to replace the retiring workforce.  The total number of mentor candidates is 1549.  This was determined using the PostgreSQL query below:
 
  --Get the total nummber of mentor candidates
+
  SELECT COUNT (me.emp_no)
+
  FROM mentorship_eligibility AS me;
